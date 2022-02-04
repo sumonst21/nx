@@ -269,4 +269,4 @@ Enable re-building when files change.
 
 Type: `string`
 
-Path to a function which takes a webpack config, some context and returns the resulting webpack config
+Path to a function which takes a webpack config, some context and returns the resulting webpack config. See https://nx.dev/guides/customize-webpack

@@ -1484,6 +1484,11 @@
             "file": "shared/eslint"
           },
           {
+            "name": "Customizing Webpack Config",
+            "id": "customize-webpack",
+            "file": "shared/guides/customize-webpack"
+          },
+          {
             "name": "Nx Daemon",
             "id": "nx-daemon",
             "file": "shared/daemon"
