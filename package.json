@@ -46,6 +46,7 @@
     "@angular/service-worker": "~13.2.0",
     "@angular/upgrade": "~13.2.0",
     "@babel/helper-create-regexp-features-plugin": "^7.14.5",
+    "@cypress/webpack-dev-server": "^1.8.1",
     "@cypress/webpack-preprocessor": "^5.9.1",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
@@ -130,7 +131,7 @@
     "copy-webpack-plugin": "^9.0.1",
     "core-js": "^3.6.5",
     "css-minimizer-webpack-plugin": "^3.1.1",
-    "cypress": "^9.1.0",
+    "cypress": "https://cdn.cypress.io/beta/npm/10.0.0/circle-10.0-release-ee08f4ae95ca2c1c442c5c699395710ff1c145e6/cypress.tgz",
     "cytoscape": "^3.18.2",
     "cytoscape-dagre": "^2.3.2",
     "cytoscape-popper": "^2.0.0",
@@ -259,10 +260,10 @@
     "zone.js": "~0.11.4"
   },
   "optionalDependencies": {
-    "@swc/core-linux-x64-musl": "^1.2.136",
-    "@swc/core-linux-x64-gnu": "^1.2.136",
     "@swc/core-linux-arm64-gnu": "^1.2.136",
-    "@swc/core-linux-arm64-musl": "^1.2.136"
+    "@swc/core-linux-arm64-musl": "^1.2.136",
+    "@swc/core-linux-x64-gnu": "^1.2.136",
+    "@swc/core-linux-x64-musl": "^1.2.136"
   },
   "author": "Victor Savkin",
   "license": "MIT",
