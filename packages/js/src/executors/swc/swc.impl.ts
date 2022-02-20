@@ -39,14 +39,13 @@ function normalizeOptions(
   );
 
   const swcCliOptions = {
-    projectDir: projectRoot.split('/').pop(),
-    // TODO: assume consumers put their code in `src`
-    destPath: `${relative(projectRoot, options.outputPath)}/src`,
+    srcPath: projectRoot,
+    destPath: join(options.outputPath, '../'),
+    swcrcPath: join(projectRoot, '.swcrc'),
   };
 
   return {
     ...options,
-    swcrcPath: join(projectRoot, '.swcrc'),
     mainOutputPath: resolve(
       outputPath,
       options.main.replace(`${projectRoot}/`, '').replace('.ts', '.js')
@@ -83,7 +82,7 @@ export async function* swcExecutor(
 ) {
   const { sourceRoot, root } = context.workspace.projects[context.projectName];
   const options = normalizeOptions(_options, context.root, sourceRoot, root);
-  options.swcrcPath = addTempSwcrc(options);
+  options.swcCliOptions.swcrcPath = addTempSwcrc(options);
   const { tmpTsConfig, projectRoot } = checkDependencies(
     context,
     options.tsConfig
