@@ -195,7 +195,7 @@
     "open": "^8.4.0",
     "parse-markdown-links": "^1.0.4",
     "parse5": "4.0.0",
-    "postcss": "^8.2.13",
+    "postcss": "^8.4.31",
     "postcss-import": "14.0.2",
     "postcss-preset-env": "^6.7.0",
     "postcss-url": "^10.1.1",
