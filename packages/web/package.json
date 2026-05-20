@@ -83,7 +83,7 @@
     "raw-loader": "^4.0.2",
     "rxjs": "^6.5.4",
     "rxjs-for-await": "0.0.2",
-    "rollup": "^2.56.2",
+    "rollup": "^4.60.4",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.1",
@@ -106,7 +106,7 @@
     "webpack-merge": "^5.8.0",
     "webpack-sources": "^3.0.2",
     "webpack-subresource-integrity": "^5.1.0",
-    "webpack-dev-server": "^4.3.1",
+    "webpack-dev-server": "^5.2.4",
     "http-server": "14.1.0",
     "ignore": "^5.0.4"
   }
